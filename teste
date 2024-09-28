@@ -1,0 +1,9 @@
+num_canais <- 16
+lista_subsets <- list()
+
+for (i in 1:num_canais) {
+  nome_var <- paste0("ch", i, "ind",i)
+  subset_canal <- subset(dataframe, dataframe$tempo >= dataframe$tempo[ind[i]] & dataframe$tempo <= dataframe$tempo[ind[i]])
+  lista_subsets[[nome_var]] <- subset_canal
+  ev1(i);  
+}
